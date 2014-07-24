@@ -1,0 +1,31 @@
+{
+  "name": "socket.io-hotel",
+  "version": "0.1.0",
+  "description": "socket.io-hotel is a room's manager that adds new features and functionalities to socket.io",
+  "main": "hotel.js",
+  "scripts": {
+    "test": "node test/tap_hotel.js"
+  },
+  "dependencies": {
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "tape": "~2.13.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gpestana/socket.io-hotel"
+  },
+  "keywords": [
+    "socket.io",
+    "rooms",
+    "manager",
+    "socket.io-adapter"
+  ],
+  "author": "gpestana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gpestana/socket.io-hotel/issues"
+  },
+  "homepage": "https://github.com/gpestana/socket.io-hotel"
+}
