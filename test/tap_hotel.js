@@ -13,8 +13,8 @@ var adapter_mockup =
      acks: {},
      adapter: NaN },
   rooms: {
-    room1: ['user1'],
-    room2: ['user1', 'user2'],
+    room1: {'room1':{room1:true}},
+    room2: {'room2':{room2:true}, 'room1':{room1:true}},
     emptyRoom: []
   },
   rooms_props: {
@@ -53,7 +53,7 @@ test('all general', function(t) {
        t.equal(_.size(properties),3, 'room 1 has 3 properties')
   })
 
-  hotel.removeRoomProperty('room1','color',function(properties){
+  hotel.delRoomProperty('room1','color',function(properties){
        t.equal(properties.color,undefined,'color was removed from room 1');
        t.equal(_.size(properties),2, 'room 1 has 2 properties')
   })
