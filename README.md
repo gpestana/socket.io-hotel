@@ -9,7 +9,8 @@ npm install socket.io-hotel
 
 ###how to use
 ```javascript
-io = require('socket.io')(http)
+io    = require('socket.io')(http),
+Hotel = require('socket.io-hotel')
 //...
 var hotel = new Hotel(io.sockets.adapter)
 ```
@@ -35,5 +36,3 @@ callback receives all users from a given room
 ####delEmptyRoom = function(roomID, clbk)    
 if room is empty, delete it. callback returns `true` if the room was deleted and `false` otherwise 
 
-####roomExists = function(roomID, clbk)    
-callback receives `true` if room exists. `false` otherwise  

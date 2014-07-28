@@ -1,6 +1,6 @@
 {
   "name": "socket.io-hotel",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "socket.io-hotel is a manager that adds new features and functionalities to socket.io's rooms",
   "scripts": {
     "test": "node test/tap_hotel.js"
